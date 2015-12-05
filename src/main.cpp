@@ -3,7 +3,6 @@
 #include <iostream>
 #include <stdio.h>
 #include <ctype.h>
-#include <ncurses.h>
 
 int main()
 {
@@ -17,7 +16,6 @@ int main()
 		 do {
 			printf("\nInput a letter\n");
 			inputChar = getchar();
-			//fflush(stdin);
 			CharacterHandler* handler = new CharacterHandler(new FlyweightFactory());
 			handler->setLetter(inputChar)->execute();
 			refresh();
@@ -25,7 +23,7 @@ int main()
 	} catch (char const* e) {
     	init_pair(2, COLOR_BLACK, COLOR_RED);
 		attron(COLOR_PAIR(2)); 
-		printw(e);
+		printf(e);
 	}
 
 	getchar();
