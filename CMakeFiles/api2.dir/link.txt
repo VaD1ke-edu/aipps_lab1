@@ -1,0 +1,2 @@
+/usr/bin/ar cr libapi2.a  CMakeFiles/api2.dir/src/VowelStrategy.cpp.o
+/usr/bin/ranlib libapi2.a
