@@ -1,2 +1,0 @@
-/usr/bin/ar cr libapi1.a  CMakeFiles/api1.dir/src/ConsonantStrategy.cpp.o
-/usr/bin/ranlib libapi1.a

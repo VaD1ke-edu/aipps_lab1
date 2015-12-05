@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11    CMakeFiles/Lab_Rab_1.dir/src/main.cpp.o CMakeFiles/Lab_Rab_1.dir/src/CharacterHandler.cpp.o CMakeFiles/Lab_Rab_1.dir/src/FlyweightFactory.cpp.o  -o Lab_Rab_1 -rdynamic libapi1.a libapi2.a -lncurses -lpanel 

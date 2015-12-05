@@ -1,3 +1,0 @@
-/home/vladislav/aipps/CMakeFiles/Lab_Rab_1.dir
-/home/vladislav/aipps/CMakeFiles/api1.dir
-/home/vladislav/aipps/CMakeFiles/api2.dir
