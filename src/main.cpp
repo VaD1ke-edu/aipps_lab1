@@ -10,22 +10,23 @@ int main()
 	initscr();
     start_color();
     init_pair(1, COLOR_BLACK, COLOR_GREEN);
-	attron(COLOR_PAIR(1)); 
+    init_pair(2, COLOR_BLACK, COLOR_BLUE);
 
 	char inputChar;
+	CharacterHandler* handler = new CharacterHandler(new FlyweightFactory());
+
 	try {
 		 do {
 			printf("\nInput a letter\n");
 			inputChar = getchar();
 			//fflush(stdin);
-			CharacterHandler* handler = new CharacterHandler(new FlyweightFactory());
 			handler->setLetter(inputChar)->execute();
 			refresh();
 		 } while (isalpha(inputChar));
 	} catch (char const* e) {
-    	init_pair(2, COLOR_BLACK, COLOR_RED);
-		attron(COLOR_PAIR(2)); 
-		printw(e);
+    	init_pair(3, COLOR_BLACK, COLOR_RED);
+		attron(COLOR_PAIR(3)); 
+		printf(e, "%s");
 	}
 
 	getchar();
